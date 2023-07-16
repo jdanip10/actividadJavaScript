@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ObjetoJavascript formulario2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="text-left text-info">
+        <ul>
+            <li>
+                <a href="#"></a>
+                <!-- imagen del logo-->
+                <img src="./image/logo.png" alt="">
+            </li>
+            <li><a href="./indexObjeto.html">Inicio</a></li>
+            <li><a href="./formularioObjeto.html">Formulario</a></li>
+            
+        </ul>
+      </nav>
+
+
+    <h1 class="text-center text-primary"> 
+        Elija los productos de su preferencia 
+    </h1>
+    <hr>
+    <div class="container text-center">
+        <div class="row">
+            
+            <div class="col-12 mb-2 text-info">     
+                Nombre: <input type="text" class="form-control" name="material" id="material" 
+                    placeholder="Escriba el producto de su preferencia">
+            </div>
+
+            <div class="col-12 mb-2 text-info"> 
+                Descripcion: <input type="text" class="form-control" name="descrip" id="descrip" 
+                placeholder="Descripcion del productos">
+            </div>
+
+            <div class="col-12 mb-2 text-info"> 
+                Valor: <input type="text" class="form-control" name="value" id="value" 
+                placeholder="Precio del productos">
+            </div>
+
+            <div class="col text-center mb-2">
+                <button type="button" class="btn btn-success" onclick="addMaterial()"> Agregar </button>
+            </div>
+        </div>
+
+        <div style="width: 70%; text-align: justify; margin: 5%;">
+            <h2 class="text-center mb-3 text-danger"> 
+                Lista de articulos 
+            </h2>
+            <hr>
+            <div class="row" id="materials"> 
+                No hay elementos 
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-primary">
+        <p>Creado por: José Daniel Posada López</p>
+        <p>Creado por: Graciela Esperanza Neira Guio</p>
+    </footer>
+    
+    <script src="./js/objetoScript.js">  </script>
+    
+
+</body>
+
+</html>
